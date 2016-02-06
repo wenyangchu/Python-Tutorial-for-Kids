@@ -608,16 +608,13 @@ style='font-size:9.0pt;line-height:115%'>5 +</span></span> 不是一個正確完
 
 <h2><a name="_Toc405145042">Storing Values in Variables 在變數裡儲存數字</a></h2>
 
-<p class=Body>You can save the value an expression evaluates to so you can use
-it later by storing them in <span class=Definition>variables</span>. Think of
-variables like a box that can hold a value.</p>
+<p class=Body>你可以把一個表達式的運算結果存在一個<span class=Definition>變數(variable)</span>裡, 這樣子就可以晚
+    點就可以運用這個結果. 變數就像一個箱子一樣把一個數直放在裡面.</p>
 
-<p class=Body>An <span class=Definition>assignment statement</span> instruction
-will store a value inside a variable. Type the name for the variable, followed
-by the = sign (called the<span class=Definition> assignment operator</span>),
-and then the value to store in the variable. For example, enter <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>spam = 15</span></span>
-into the interactive shell:</p>
+<p class=Body>一個 <span class=Definition>assignment statement</span> 指令
+會將一個數值儲存在變數裡. 先輸入變數名稱, 後面加上等號 = (也叫做 <span class=Definition> assignment operator</span>),
+最後在後面加上要存的數值. 舉例來說, 在Python console輸入 <span
+class=Literal><span style='font-size:9.0pt;line-height:115%'>spam = 15</span></span></p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -628,49 +625,34 @@ into the interactive shell:</p>
 
 </div>
 
-<p class=Body>The <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>spam</span></span> variable’s box will have the value <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>
-stored in it, as shown in Figure 1-4. The name “spam” is the label on the box
-(so Python can tell variables apart) and the value is written on a small note
-inside the box.</p>
+<p class=Body><span class=Literal>圖 1-4 說明這個<span style='font-size:9.0pt;line-height:
+115%'></span></span>變數箱子裡面放著一張卡片寫這個數值: <span
+class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>.
+spam是這個箱子上標籤的名子. 這樣一來Python可以知道是那個箱子存這個數值.</p>
 
-<p class=Body>When you press <span class=Keycap><span style='font-variant:normal !important;
-text-transform:uppercase'>enter</span></span> you won’t see anything in
-response. In Python, the instruction executed was successful if no error
-message appears. The <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>&gt;&gt;&gt;</span></span> prompt will appear so you can type
-in the next instruction.</p>
+<p class=Body>當你按下<span class=Keycap><span style='font-variant:normal !important;
+text-transform:uppercase'>enter</span></span>後, 你不會在Python console看到任何反應.
+    在Python裡, 如果沒有看到任何錯誤訊息, 這代表指令已經被順利執行. <span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>&gt;&gt;&gt;</span></span> 提示字元 >>> 會再次出現告訴你可以輸入下個指令.</p>
 
 <p class=Body>&nbsp;</p>
 
 <p class=MsoNormal align=center style='text-align:center'><img width=242
 height=216 id="Picture 40" src="lesson1fig4.png"></p>
 
-<p class=MsoCaption>Figure 1-4: Variables are like boxes that can hold values
-in them.</p>
+<p class=MsoCaption>圖 1-4: 變數就像是一個箱子, 裡面可以放數值在裡面.</p>
 
-<p class=Body>Unlike expressions, <span class=Definition>statements</span> are
-instructions that do not evaluate to any value. This is why there’s no value
-displayed on the next line in the interactive shell after <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam = 15</span></span>. If you are
-confused about which instructions are expressions and which are statements,
-remember that expressions evaluate to a single value. Any other kind of
-instruction is a statement.</p>
+<p class=Body>不像是expressions表達式, <span class=Definition>statements陳述</span>是一種不運算的指令. 這也是為什麼沒有任何數字
+    出現在<span class=Literal><span style='font-size:9.0pt;line-height:115%'>spam = 15</span></span>指令之後. 如果你覺得搞
+    不清楚什麼是表達式, 什麼是陳述的話, 就記住表達式最後會算出一個數值, 剩下其他的都是陳述.</p>
 
-<p class=Body>Variables store values, not expressions. For example, consider
-the expression in the statements <span class=Literal><span style='font-size:
-9.0pt;line-height:115%'>spam = 10 + 5</span></span> and <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam = 10 + 7 - 2</span></span>. They
-both evaluate to <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>15</span></span>. The end result is the same: Both assignment statements
-store the value <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>15</span></span> in the variable <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam</span></span>.</p>
+<p class=Body>變數儲存數值, 並非表達式. 舉例來說, 看看以下的指令 <span class=Literal><span style='font-size:
+9.0pt;line-height:115%'>spam = 10 + 5</span></span> 和 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam = 10 + 7 - 2</span></span>. 他們最後都是儲存一個數值<span class=Literal><span style='font-size:9.0pt;line-height:
+115%'>15</span></span>在變數<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam</span></span>裡.</p>
 
-<p class=Body>The first time a variable is used in an assignment statement,
-Python will create that variable. To check what value is in a variable, type
-the variable name into the interactive shell:</p>
+<p class=Body><T></T>每當變數被使用第一次時, Python會創造這個變數. 要確認什麼數值儲存在某個變數裡,可以在Python console輸入這個變數名稱:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
