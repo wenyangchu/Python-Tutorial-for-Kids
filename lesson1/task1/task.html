@@ -666,12 +666,9 @@ spam</p>
 
 </div>
 
-<p class=Body>The expression <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam</span></span> evaluates to the value inside the <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>spam</span></span>
-variable: <span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>.
-You can use variables in expressions. Try entering the following in the
-interactive shell:</p>
+<p class=Body>你可以用<span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam</span></span>這個變數去計算: <span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>.
+試試看在python console裡輸入:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -685,14 +682,13 @@ spam + 5</p>
 
 </div>
 
-<p class=Body>You’ve set the value of the variable <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam</span></span> to <span
+<p class=Body>你剛剛改變了<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam</span></span>裡面的數值為<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>,
-so writing <span class=Literal><span style='font-size:9.0pt;line-height:115%'>spam
-+ 5</span></span> is like writing the expression <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>15 + 5</span></span>. Here are the
-steps of <span class=Literal><span style='font-size:9.0pt;line-height:115%'>spam
-+ 5</span></span> being evaluated:</p>
+所以 <span class=Literal><span style='font-size:9.0pt;line-height:115%'>spam
++ 5</span></span> 就像是<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>15 + 5</span></span>一樣. 下面一步一步的解釋<span class=Literal><span style='font-size:9.0pt;line-height:115%'>spam
++ 5</span></span>是如何被計算的:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -710,10 +706,8 @@ class=Literal>     </span><span class=Literal><span style='font-family:"Courier 
 
 </div>
 
-<p class=Body>You cannot use a variable before an assignment statement creates
-it. Python will give you a <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>NameError</span></span> because no such variable by that name
-exists yet. Mistyping the variable name also causes this error:</p>
+<p class=Body>如果還沒有創造出一個變數前, 這個變數是不能被使用的. Python 會輸出一個名稱錯誤訊息<span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>NameError</span></span> 因為不存在叫這樣一個名稱的變數.輸入名稱錯誤也會造成這樣的錯誤:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -736,14 +730,12 @@ recent call last):</p>
 
 </div>
 
-<p class=Body>The error appeared because there’s <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam</span></span> variable but no
-variable named <span class=Literal><span style='font-size:9.0pt;line-height:
+<p class=Body>這個錯誤產生的原因是因為有<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam</span></span>這個變數但是沒有一個變數叫做
+<span class=Literal><span style='font-size:9.0pt;line-height:
 115%'>spma</span></span>.</p>
 
-<p class=Body>You can change the value stored in a variable by entering another
-assignment statement. For example, try entering the following into the
-interactive shell:</p>
+<p class=Body>你也可以寫另一個指令去改變一個變數儲存的數值, 例如來說在Python concole輸入:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -765,28 +757,27 @@ spam + 5</p>
 
 </div>
 
-<p class=Body>When you first enter <span class=Literal><span style='font-size:
-9.0pt;line-height:115%'>spam + 5</span></span>, the expression evaluates to <span
+<p class=Body>當你輸入 <span class=Literal><span style='font-size:
+9.0pt;line-height:115%'>spam + 5</span></span>, 數值計算後變成 <span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>20</span></span>
-because you stored <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>15</span></span> inside <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam</span></span>. However, when you enter <span
+這是因為 <span class=Literal><span style='font-size:9.0pt;line-height:
+115%'>15</span></span>之前被存在這個變數. <span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam</span></span>裡面了.但是當你輸入 <span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>spam = 3</span></span>,
-the value <span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>
-is replaced, or <span class=Definition>overwritten</span>, with the value <span
+之前儲存的數值 <span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>
+已經被取代了, 或是被另一個數字給<span class=Definition>overwritten複寫</span>過去<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>3</span></span>.
-Now when you enter <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>spam + 5</span></span>, the expression evaluates to <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>8</span></span> because the value of <span
+現在你輸入 <span class=Literal><span style='font-size:9.0pt;line-height:
+115%'>spam + 5</span></span>, 計算結果變成 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>8</span></span> 這是因為 <span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>spam</span></span>
-is now <span class=Literal><span style='font-size:9.0pt;line-height:115%'>3</span></span>.
-Overwriting is shown in Figure 1-5.</p>
+裡的數值之前已經被複寫成 <span class=Literal><span style='font-size:9.0pt;line-height:115%'>3</span></span>了.
+圖 1-5 顯示了這樣複寫的過程.</p>
 
 <p class=Body align=center style='text-align:center'><img width=228 height=288
 id="Picture 20" src="lesson1fig5.png"></p>
 
-<p class=MsoCaption>Figure 1-5: The 15 value in spam being overwritten by the 3
-value.</p>
+<p class=MsoCaption>圖 1-5: 在spam裡的數值15已經被3給複寫取代.</p>
 
 <p class=Body>You can even use the value in the <span class=Literal><span
 style='font-size:9.0pt;line-height:115%'>spam</span></span> variable to assign
