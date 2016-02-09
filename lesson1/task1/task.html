@@ -735,7 +735,7 @@ style='font-size:9.0pt;line-height:115%'>spam</span></span>這個變數但是沒
 <span class=Literal><span style='font-size:9.0pt;line-height:
 115%'>spma</span></span>.</p>
 
-<p class=Body>你也可以寫另一個指令去改變一個變數儲存的數值, 例如來說在Python concole輸入:</p>
+<p class=Body>你也可以寫另一個指令去改變一個變數儲存的數值, 例如來說在Python console輸入:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -779,10 +779,9 @@ id="Picture 20" src="lesson1fig5.png"></p>
 
 <p class=MsoCaption>圖 1-5: 在spam裡的數值15已經被3給複寫取代.</p>
 
-<p class=Body>You can even use the value in the <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam</span></span> variable to assign
-a new value to <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>spam</span></span>:</p>
+<p class=Body>你甚至可以利用 <span class=Literal><span style='font-size:9.0pt;line-height:
+115%'>spam</span></span>裡的數值去計算並且指派一個新的數值給<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam</span></span>:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -796,15 +795,11 @@ spam = spam + 5</p>
 
 </div>
 
-<p class=Body>The assignment statement <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam = spam + 5</span></span> is like
-saying, “the new value of the <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam</span></span> variable will be the current value of <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>spam</span></span>
-plus five.” Keep increasing the value in <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>spam</span></span> by <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>5</span></span>
-several times by entering the following into the interactive shell:</p>
+<p class=Body><span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>spam = spam + 5</span></span>的意思是新的<span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam</span></span>變數會儲存現在的值加上5<span
+class=Literal>. 我們可以在Python Console裡執行同一個的式子五次, 去不停增加<span
+style='font-size:9.0pt;line-height:115%'>spam</span>的數值:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -827,13 +822,12 @@ spam</p>
 
 </div>
 
-<p class=Non-TOCHeading3>Using More Than One Variable</p>
+<p class=Non-TOCHeading3>使用不只一個變數</p>
 
-<p class=Body>Create as many variables as you need in your programs. For
-example, let’s assign different values to two variables named <span
+<p class=Body>我們可以依我的的需要創造很多變數. 舉例來說, 我們可以給兩個變數<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>eggs</span></span>
-and <span class=Literal><span style='font-size:9.0pt;line-height:115%'>bacon</span></span>,
-like so:</p>
+和<span class=Literal><span style='font-size:9.0pt;line-height:115%'>bacon</span></span>,
+不一樣的數值:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -845,23 +839,22 @@ bacon = 10</p>
 
 </div>
 
-<p class=Body>Now the <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>bacon</span></span> variable has <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>10</span></span> inside it, and <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>eggs</span></span>
-has <span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>
-inside it. Each variable is its own box with its own value, like in Figure 1-6.</p>
+<p class=Body>現在 <span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>bacon</span></span> 變數裡存著的值是 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>10</span></span>, <span
+class=Literal><span style='font-size:9.0pt;line-height:115%'>eggs</span></span>變數是
+<span class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>
+. 每個變數盒子都有自己的數值, 就像圖1-6表示的一樣.</p>
 
 <p class=MsoNormal align=center style='text-align:center'><img width=355
 height=207 id="Picture 24" src="lesson1fig6.jpg"></p>
 
-<p class=MsoCaption>Figure 1-6: The “bacon” and “eggs” variables have values
-stored in them.</p>
+<p class=MsoCaption>圖 1-6: “bacon” 和 “eggs” 變數裡面存著不同的數值.</p>
 
-<p class=Body>Try entering <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam = bacon + eggs</span></span> into the interactive shell,
-then check the new value of <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam</span></span>:</p>
+<p class=Body>試著在Python console裡輸入 <span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam = bacon + eggs</span></span>,
+然後檢查看看 <span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam</span></span>裡的數值是多少:</p>
 
 <div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
 
@@ -881,46 +874,38 @@ spam</p>
 
 </div>
 
-<p class=Body>The value in <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>spam</span></span> is now <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>25</span></span>. When you added <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>bacon</span></span>
-and <span class=Literal><span style='font-size:9.0pt;line-height:115%'>eggs</span></span>
-you are adding their values, which are <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>10</span></span> and <span
-class=Literal><span style='font-size:9.0pt;line-height:115%'>15</span></span>,
-respectively. Variables contain values, not expressions. The <span
+<p class=Body>當你把<span
+class=Literal><span style='font-size:9.0pt;line-height:115%'>裡面含有值10的bacon</span></span>
+還有<span class=Literal><span style='font-size:9.0pt;line-height:115%'>裡面含有值15的eggs
+</span></span><span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>spam</span></span> 裡的數值現在變成<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>25</span></span>. 這些變數裡面存有數值, 而不是表示式.<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>spam</span></span>
-variable was assigned value <span class=Literal><span style='font-size:9.0pt;
-line-height:115%'>25</span></span>, and not the expression <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>bacon + eggs</span></span>. After the <span
+這個變數被賦予一個值<span class=Literal><span style='font-size:9.0pt;
+line-height:115%'>25</span></span>, 而不是表示式<span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>bacon + eggs</span></span>. 當<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>spam = bacon +
-eggs</span></span> assignment statement, changing <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>bacon</span></span> or <span
+eggs</span></span> 執行完後, 改變 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>bacon</span></span> 或是 <span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>eggs</span></span>
-does not affect <span class=Literal><span style='font-size:9.0pt;line-height:
-115%'>spam</span></span>.</p>
+不會影響 <span class=Literal><span style='font-size:9.0pt;line-height:
+115%'>spam</span></span>裡面存的數值.</p>
 
-<p class=Non-TOCHeading3>Summary</p>
+<p class=Non-TOCHeading3>總結</p>
 
-<p class=Body>In this chapter, you learned the basics about writing Python
-instructions. Python needs you to tell it exactly what to do in a strict way.
-Computers don’t have common sense and only understand specific instructions.</p>
+<p class=Body>我們在這第一課學會了怎麼寫一些基礎的Python指令. Python 需要你嚴謹地告訴他到要做什麼事情, 因為電腦沒有跟我們一樣的常識,
+只了解一些特殊的指令.</p>
 
-<p class=Body>Expressions are values (such as <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>2</span></span> or <span
+<p class=Body>表示式是數值(像是 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>2</span></span>或<span
 class=Literal><span style='font-size:9.0pt;line-height:115%'>5</span></span>)
-combined with operators (such as <span class=Literal><span style='font-size:
-9.0pt;line-height:115%'>+</span></span> or <span class=Literal><span
-style='font-size:9.0pt;line-height:115%'>-</span></span>). Python can evaluate
-expressions, that is, reduce the expression to a single value. You can store
-values inside of variables so that your program can remember them and use them
-later.</p>
+或是數值加上一些運算元 (像是 <span class=Literal><span style='font-size:
+9.0pt;line-height:115%'>+</span></span> 或 <span class=Literal><span
+style='font-size:9.0pt;line-height:115%'>-</span></span>). Python 可以計算這個式子,把這個些式子簡化成數字. 你可以儲存
+這些數值在變數裡, 這樣後來其他的指令就可以使用它們.</p>
 
-<p class=Body>There are many other types of operators and values in Python. In
-the next chapter, you’ll go over some more basic concepts and write your first
-program. You’ll learn about working with text in expressions. Python isn’t
-limited to just numbers; it’s more than a calculator!</p>
+<p class=Body>在Python裡有很多不同種類的運算元跟數值. 下一課, 你會學會如何寫你第一個程式, 也會學會其他一些基本的概念.
+更有趣的是, 你會發現Python不只是一個計算機, 你會學會怎麼把文字放在表示式裡面!</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
