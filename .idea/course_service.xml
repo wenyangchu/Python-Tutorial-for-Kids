@@ -9,27 +9,6 @@
             <Lesson>
               <option name="index" value="1" />
               <option name="name" value="Lesson 1 THE INTERACTIVE SHELL" />
-              <option name="taskList">
-                <list>
-                  <Task>
-                    <option name="index" value="1" />
-                    <option name="name" value="task1" />
-                    <option name="taskFiles">
-                      <map>
-                        <entry key="task.py">
-                          <value>
-                            <TaskFile>
-                              <option name="highlightErrors" value="true" />
-                              <option name="index" value="1" />
-                              <option name="name" value="task.py" />
-                            </TaskFile>
-                          </value>
-                        </entry>
-                      </map>
-                    </option>
-                  </Task>
-                </list>
-              </option>
             </Lesson>
             <Lesson>
               <option name="index" value="2" />
